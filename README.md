@@ -4,6 +4,6 @@ Made with the most of **Javascript**.
 
 Used abit of Css and Html.
 
-<a href="https://onosejoor.github.io/Simon-game/">Live site</a>
+<a href="https://onosejoor.github.io/Simon-Game/">Live site</a>
 
 Thank You 
