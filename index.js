@@ -12,7 +12,7 @@ $(".hidden").click(function () {
             next();
         }, 500);
         started = true;
-        $(".hidden").css("display", "none");
+        $(".hidden").fadeOut(200);
     }
 });
 
@@ -75,7 +75,7 @@ function checkAnswer (currentLevel) {
 
         $("body").addClass("wrong");
         
-        $(".hidden").css("display", "inline-block");
+        $(".hidden").fadeIn(300);
 
         setTimeout( function () {
             $("body").removeClass("wrong");
