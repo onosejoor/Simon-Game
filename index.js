@@ -6,10 +6,13 @@ let started = false;
 
 // TO START THE GAME //
 
-$("body").keydown(function () {
+$(".hidden").click(function () {
     if (!started) {
-        next();
+        setTimeout(() => {
+            next();
+        }, 500);
         started = true;
+        $(".hidden").css("display", "none");
     }
 });
 
@@ -20,7 +23,7 @@ $(".btn").click(function () {
     playSound(btnId);
     animatePress(btnId);
     userPattern.push(btnId);
-    
+
     checkAnswer(userPattern.length - 1);
 });
 
@@ -68,9 +71,11 @@ function checkAnswer (currentLevel) {
             }, 1000);
         }
     } else{
-        $("h1").text("Game Over, Tap Any Key To Restart");
+        $("h1").text("Game Over, Tap To Restart");
 
         $("body").addClass("wrong");
+        
+        $(".hidden").css("display", "inline-block");
 
         setTimeout( function () {
             $("body").removeClass("wrong");

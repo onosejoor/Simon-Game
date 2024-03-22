@@ -15,7 +15,19 @@ h1{
     opacity: 0.8;
 }
 
-button{
+.hidden{
+    border-radius: 30px;
+    height: 50px;
+    background-color: wheat;
+    border: 7px solid black;
+    width: 20%;
+    margin: 2% auto;
+    font-family: 'Press Start 2P', cursive;
+    color: #011F3F;
+    margin-top: auto;
+}
+
+.btn{
     height: 200px;
     width: 200px;
     border-radius: 50px;
@@ -49,4 +61,16 @@ button{
 footer > p{
     color: wheat;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media(max-width:400px){
+    .hidden{
+        width: fit-content;
+    }
+    .btn{
+        margin: 10px auto;
+    }
+    h1{
+        font-size: 20px;
+    }
 }
