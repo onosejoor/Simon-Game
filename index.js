@@ -69,6 +69,12 @@ function checkAnswer (currentLevel) {
             setTimeout(function () {
                 next();
             }, 1000);
+            var win = new Audio("./sounds/win.wav");
+            win.play();
+            $("body").addClass("right");
+            setTimeout( function () {
+                $("body").removeClass("right");
+            }, 200);
         }
     } else{
         $("h1").text("Game Over, Tap To Restart");

@@ -4,10 +4,19 @@ body{
     font-family: 'Press Start 2P', cursive;
 
 }
+nav{
+    text-align: end;
+    margin-right: 2%;
+}
 
 h1{
     margin: 3%;
+    margin-top: 0px;
     color: wheat;
+}
+
+.right{
+    background-color: greenyellow;
 }
 
 .wrong{
@@ -20,7 +29,7 @@ h1{
     height: 50px;
     background-color: wheat;
     border: 7px solid black;
-    width: 20%;
+    padding: 0px 5%;
     margin: 2% auto;
     font-family: 'Press Start 2P', cursive;
     color: #011F3F;
@@ -62,10 +71,17 @@ footer > p{
     color: wheat;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+a{
+    color: wheat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
 
-@media(max-width:400px){
+
+@media(max-width:500px){
     .hidden{
         width: fit-content;
+        padding: 0px 10%;
     }
     .btn{
         margin: 10px auto;
