@@ -50,10 +50,12 @@ function playSound (name) {
 
 function animatePress(currentKey) {
     $("#"+currentKey).addClass("pressed");
+    
+    $("#"+currentKey).fadeIn(100).fadeOut(100).fadeIn(100);
 
     setTimeout( function () {
         $("#"+currentKey).removeClass("pressed");
-    }, 200);
+    }, 300);
 }
 
 // TO CHECK ANSWER //
