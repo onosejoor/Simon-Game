@@ -76,6 +76,7 @@ function checkAnswer (currentLevel) {
             $("body").removeClass("wrong");
         }, 200);
         startover();
+        playSound("wrong");
     }
 }
 
